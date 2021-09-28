@@ -22,4 +22,11 @@ describe('testa função checkNumber ', () => {
       expect(retorno).to.be.equals('neutro');
     })
   })
+
+  describe('Qual o valor recebido não é um número', () => {
+    it('o retorno é igual a o valor deve ser um número', () => {
+      const retorno = checkNumber('ok');
+      expect(retorno).to.be.equals('o valor deve ser um número');
+    })
+  })
 });
